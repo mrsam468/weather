@@ -1,0 +1,39 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+    background:#222;
+    
+}
+.container{
+    background: #eaeaea;
+    padding:2em;
+    border-radius:30px ;
+    width:100%;
+    max-width: 400px;
+}
+.search{
+    display:flex;
+    align-items: center;
+    justify-content: center;            
+}
+button{
+    margin:0.5em;
+    border-radius: 50%;
+    border:none;
+    height:2.5em;
+    width:2.5em;
+    outline:none;
+
+}
+input{
+    border:none;
+    outline:none;
+    padding:0.8em;
+    border-radius:18px;
+    background-color:#7c7c7cbb;
+    font: 120%;
+
+}
