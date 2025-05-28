@@ -27,12 +27,23 @@ search: function(){
      this.fetchWeather(document.querySelector(".city").value)}
 }
 document.querySelector("#searchbutton").addEventListener("click", function(){
-    weather.search();
-})
-document.querySelector(".city").addEventListener("keyup", function(event){
-    if(event.key == "Enter"){
+     if(document.querySelector(".city").value == ""){
+        alert("PLEASE ENTER A CITY NAME")
+    }
+    else if(event.key == "Enter"){
         weather.search();
         document.querySelector(".city").value=""
     }
+    
+})
+document.querySelector(".city").addEventListener("keyup", function(event){
+    if(document.querySelector(".city").value == ""){
+      alert("PLEASE ENTER A CITY NAME")
+    }
+    else if(event.key == "Enter"){
+        weather.search();
+        document.querySelector(".city").value=""
+    }
+   
 })
 weather.fetchWeather("abuja");
